@@ -17,16 +17,4 @@ $packageArgs = @{
   silentArgs   = '/s /v"/qn"'
 }
 
-Install-ChocolateyPackage @packageArgs # https://docs.chocolatey.org/en-us/create/functions/install-chocolateypackage
-#Install-ChocolateyZipPackage @packageArgs # https://docs.chocolatey.org/en-us/create/functions/install-chocolateyzippackage
-
-## Install an application, will assert administrative rights
-##Install-ChocolateyPackage $packageName $fileType $silentArgs $url [$url64 -validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64]
-
-## Download and unpack a zip file - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyzippackage
-##Install-ChocolateyZipPackage $packageName $url $toolsDir [$url64 -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64]
-
-## Add specific files as shortcuts to the desktop
-## - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyshortcut
-#$target = Join-Path $toolsDir "$($packageName).exe"
-# Install-ChocolateyShortcut -shortcutFilePath "<path>" -targetPath "<path>" [-workDirectory "C:\" -arguments "C:\test.txt" -iconLocation "C:\test.ico" -description "This is the description"]
+Install-ChocolateyZipPackage @packageArgs

@@ -8,34 +8,18 @@
     <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
     <owners>Sam Rowlands</owners>
     <title>ark-vcs (zip)</title>
-    <authors>Nuno Afonso</authors>
-    <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
-    <!-- Here is an example using Githack -->
-    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/ark-vcs.png</iconUrl>
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+    <projectUrl>https://ark-vcs.com/download.html</projectUrl>
+    <licenseUrl>https://ark-vcs.com/pricing.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
     <projectSourceUrl>https://ark-vcs.com/index.html</projectSourceUrl>
     <docsUrl>https://ark-vcs.com/documentation.html</docsUrl>
     <tags>ark-vcs vcs ark version-control cli</tags>
     <summary>Ark is a new Version Control System for teams looking for an alternative to Perforce and Git</summary>
     <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
+    <releaseNotes>https://ark-vcs.com/download.html</releaseNotes>
+    <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
-    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension -->
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

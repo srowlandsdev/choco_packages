@@ -19,41 +19,14 @@ $packageArgs = @{
 
 Install-ChocolateyPackage @packageArgs # https://docs.chocolatey.org/en-us/create/functions/install-chocolateypackage
 #Install-ChocolateyZipPackage @packageArgs # https://docs.chocolatey.org/en-us/create/functions/install-chocolateyzippackage
-## If you are making your own internal packages (organizations), you can embed the installer or
-## put on internal file share and use the following instead (you'll need to add $file to the above)
-#Install-ChocolateyInstallPackage @packageArgs # https://docs.chocolatey.org/en-us/create/functions/install-chocolateyinstallpackage
 
 ## Install an application, will assert administrative rights
-## - https://docs.chocolatey.org/en-us/create/functions/install-chocolateypackage
-## - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyinstallpackage
-## add additional optional arguments as necessary
 ##Install-ChocolateyPackage $packageName $fileType $silentArgs $url [$url64 -validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64]
 
 ## Download and unpack a zip file - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyzippackage
 ##Install-ChocolateyZipPackage $packageName $url $toolsDir [$url64 -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64]
 
-## Installer, will assert administrative rights - used by Install-ChocolateyPackage
-## use this for embedding installers in the package when not going to community feed or when you have distribution rights
-## - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyinstallpackage
-#Install-ChocolateyInstallPackage $packageName $fileType $silentArgs '_FULLFILEPATH_' -validExitCodes $validExitCodes
-
-## Runs processes asserting UAC, will assert administrative rights - used by Install-ChocolateyInstallPackage
-## - https://docs.chocolatey.org/en-us/create/functions/start-chocolateyprocessasadmin
-#Start-ChocolateyProcessAsAdmin 'STATEMENTS_TO_RUN' 'Optional_Application_If_Not_PowerShell' -validExitCodes $validExitCodes
-
-## To avoid quoting issues, you can also assemble your -Statements in another variable and pass it in
-#$appPath = "$env:ProgramFiles\appname"
-##Will resolve to C:\Program Files\appname
-#$statementsToRun = "/C `"$appPath\bin\installservice.bat`""
-#Start-ChocolateyProcessAsAdmin $statementsToRun cmd -validExitCodes $validExitCodes
-
 ## Add specific files as shortcuts to the desktop
 ## - https://docs.chocolatey.org/en-us/create/functions/install-chocolateyshortcut
 #$target = Join-Path $toolsDir "$($packageName).exe"
 # Install-ChocolateyShortcut -shortcutFilePath "<path>" -targetPath "<path>" [-workDirectory "C:\" -arguments "C:\test.txt" -iconLocation "C:\test.ico" -description "This is the description"]
-
-##PORTABLE EXAMPLE
-#$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-# despite the name "Install-ChocolateyZipPackage" this also works with 7z archives
-#Install-ChocolateyZipPackage $packageName $url $toolsDir $url64
-## END PORTABLE EXAMPLE

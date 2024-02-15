@@ -45,9 +45,6 @@ Data is saved in the following places:
 
 ]]></description>
     <releaseNotes>https://ark-vcs.com/download.html</releaseNotes>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

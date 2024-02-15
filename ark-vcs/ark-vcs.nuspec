@@ -16,7 +16,36 @@
     <docsUrl>https://ark-vcs.com/documentation.html</docsUrl>
     <tags>ark-vcs vcs ark version-control cli</tags>
     <summary>Ark is a new Version Control System for teams looking for an alternative to Perforce and Git</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
+	  <description>
+		  <![CDATA[Ark is a new Version Control System for teams looking for an alternative to Perforce and Git.
+
+These are the features that define Ark:  
+
+* Simple to use / understand
+* Responsive
+* Centralized
+* Reliable / trustworthy
+* Focused on trunk-based development
+* Soft-Locking for handling binaries
+* Case insensitive
+* Built-in connection encryption
+* Support for Windows, Linux and MacOS
+* Built-in GUI client
+* Simple licensing
+
+## What is Ark built with?
+
+Ark is being built with Jai programming language. At this point it uses GLFW for window management and Dear ImGui for the GUI.
+
+## Where does Ark save data?
+
+Data is saved in the following places:
+
+* Directory where you initialize the server
+* .ark/ inside the directory where you initialize a client workspace
+* C:/Users/{user}/AppData/Local/Ark-Vcs/ for everything else (e.g. preferences)
+
+]]></description>
     <releaseNotes>https://ark-vcs.com/download.html</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />

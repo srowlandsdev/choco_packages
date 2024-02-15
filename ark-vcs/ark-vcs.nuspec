@@ -9,7 +9,7 @@
 	<authors>Ark-VCS</authors>
     <projectUrl>https://ark-vcs.com/download.html</projectUrl>
     <licenseUrl>https://ark-vcs.com/pricing.html</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://ark-vcs.com/index.html</projectSourceUrl>
     <docsUrl>https://ark-vcs.com/documentation.html</docsUrl>
     <tags>ark-vcs vcs ark version-control cli</tags>

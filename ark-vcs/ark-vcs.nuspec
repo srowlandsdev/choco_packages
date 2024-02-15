@@ -5,7 +5,7 @@
   <metadata>
     <id>ark-vcs</id>
     <version>0.6.1</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <packageSourceUrl>https://github.com/srowlandsdev/choco_packages/tree/main/ark-vcs</packageSourceUrl>
     <owners>Sam Rowlands</owners>
     <title>ark-vcs (zip)</title>
 	<authors>Ark-VCS</authors>

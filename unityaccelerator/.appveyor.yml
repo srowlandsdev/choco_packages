@@ -1,0 +1,22 @@
+version: '{build}'
+max_jobs: 1
+branches:
+  only:
+  - master
+
+environment:
+  package_name: unityaccelerator
+
+build_script:
+  - ps: choco pack
+
+test_script:
+  - ps: choco install $Env:PACKAGE_NAME --source="'.;https://chocolatey.org/api/v2'" -dvy
+  - ps: choco uninstall -dvy $Env:PACKAGE_NAME
+
+notifications:
+  - provider: Email
+    to: $(mail_user)
+    on_build_success: false
+    on_build_failure: false
+    on_build_status_changed: false

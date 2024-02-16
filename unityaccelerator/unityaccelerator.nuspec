@@ -9,7 +9,7 @@
     <projectUrl>https://docs.unity3d.com/Manual/UnityAccelerator.html</projectUrl>
     <iconUrl>https://rawcdn.githack.com/srowlandsdev/choco_packages/3f71926be78b72f3a87e87678cc90db844b1f3db/unityaccelerator/unitylogo.png</iconUrl>
     <copyright>Copyright © 2024 Unity Technologies</copyright>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/srowlandsdev/choco_packages/tree/main/unityaccelerator</packageSourceUrl>
     <docsUrl>https://docs.unity3d.com/Manual/UnityAccelerator.html</docsUrl>
     <bugTrackerUrl>https://forum.unity.com/forums/unity-accelerator.392/</bugTrackerUrl>

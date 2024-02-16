@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>unityaccelerator</id>
+    <version>1.0.941</version>
+    <title>unityaccelerator</title>
+    <owners>Sam Rowlands</owners>
+    <authors>Unity Technologies</authors>
+    <projectUrl>https://docs.unity3d.com/Manual/UnityAccelerator.html</projectUrl>
+    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/unitylogo.png</iconUrl>
+    <copyright>Copyright © 2024 Unity Technologies</copyright>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <packageSourceUrl>https://github.com/srowlandsdev/choco_packages/tree/main/unityaccelerator</packageSourceUrl>
+    <docsUrl>https://docs.unity3d.com/Manual/UnityAccelerator.html</docsUrl>
+    <bugTrackerUrl>https://forum.unity.com/forums/unity-accelerator.392/</bugTrackerUrl>
+    <tags>unity accelerator cache server unity3d editor cross-platform</tags>
+    <summary>Unity Accelerator</summary>
+    <description>
+		<![CDATA[The Unity Accelerator is a caching proxy agent that keeps copies of a team’s imported assets to speed up teamwork. The goal of the accelerator is to help teams reduce iteration time. An Accelerator coordinates asset sharing when your team is working on the same local network so that you don’t need to reimport portions of your project. This is done via the Asset Import Pipeline v2 Unity Editor capabilities. 
+    ]]></description>
+    <releaseNotes>https://forum.unity.com/threads/unity-accelerator-release-notes.806523/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

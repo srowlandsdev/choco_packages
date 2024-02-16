@@ -7,7 +7,7 @@
     <owners>Sam Rowlands</owners>
     <authors>Unity Technologies</authors>
     <projectUrl>https://docs.unity3d.com/Manual/UnityAccelerator.html</projectUrl>
-    <iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/unitylogo.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/srowlandsdev/choco_packages/3f71926be78b72f3a87e87678cc90db844b1f3db/unityaccelerator/unitylogo.png</iconUrl>
     <copyright>Copyright © 2024 Unity Technologies</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
     <packageSourceUrl>https://github.com/srowlandsdev/choco_packages/tree/main/unityaccelerator</packageSourceUrl>

@@ -3,8 +3,8 @@
   <metadata>
     <id>plasticscm-enterprise</id>
     <version>11.0.16.8434</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-    <title>plasticscm-enterprise (Install)</title>
+    <packageSourceUrl>https://github.com/srowlandsdev/choco_packages/tree/main/plasticscm-enterprise</packageSourceUrl>
+    <title>plasticscm-enterprise</title>
     <owners>srowlands</owners>
     <authors>Unity Technologies</authors>
     <projectUrl>https://www.plasticscm.com/</projectUrl>

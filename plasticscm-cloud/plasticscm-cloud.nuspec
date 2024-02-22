@@ -3,9 +3,9 @@
   <metadata>
     <id>plasticscm-cloud</id>
     <version>11.0.16.8434</version>
-    <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
+    <packageSourceUrl>https://github.com/srowlandsdev/choco_packages/tree/main/plasticscm-cloud</packageSourceUrl>
     <owners>srowlands</owners>
-    <title>plasticscm-cloud (Install)</title>
+    <title>plasticscm-cloud</title>
     <authors>Unity Technologies</authors>
     <projectUrl>https://www.plasticscm.com/</projectUrl>
     <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/plasticscm-cloud.png</iconUrl>-->
@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://www.plasticscm.com/</projectSourceUrl>
     <docsUrl>https://docs.plasticscm.com/</docsUrl>
-    <tags>plasticscm-cloud SPACE_SEPARATED</tags>
+    <tags>plasticscm-cloud vcs devops unity version-control cli</tags>
     <summary>__REPLACE__</summary>
     <description>__REPLACE__MarkDown_Okay 
 

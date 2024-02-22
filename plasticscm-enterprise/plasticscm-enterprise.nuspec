@@ -8,30 +8,15 @@
     <owners>srowlands</owners>
     <authors>Unity Technologies</authors>
     <projectUrl>https://www.plasticscm.com/</projectUrl>
-    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/plasticscm-enterprise.png</iconUrl>-->
+    <iconUrl>https://rawcdn.githack.com/srowlandsdev/choco_packages/a425c39992f78eaba54844228667340f732dbd2a/plasticscm-enterprise/plastic-scm-logo.png</iconUrl>
     <copyright>Copyright © 2024 Unity Technologies</copyright>
-    <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://www.plasticscm.com/</projectSourceUrl>
     <docsUrl>https://docs.plasticscm.com/</docsUrl>
-    <tags>plasticscm-enterprise SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay 
-
-
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-</description>
+    <tags>plasticscm-cloud vcs devops unity version-control cli</tags>
+    <summary>Plastic SCM is a full version control stack designed for branching and merging. It offers speed, visualization, and flexibility.</summary>
+    <description><![CDATA[Plastic is perfect for implementing "task branches," our favorite pattern that combines really well with trunk-based development, DevOps, Agile, Kanban, and many other great practices. Plastic is designed to handle thousands of branches, automate merges other systems can’t, provide the best diff and merge tools, (we’re the only ones providers of semantic diff and merge). So you can work centralized or distributed (Git-like, or SVN/P4 like), to deal with huge repos (4TB is not an issue) and be as simple as possible.]]></description>
     <releaseNotes>https://www.plasticscm.com/download/releasenotes</releaseNotes>
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

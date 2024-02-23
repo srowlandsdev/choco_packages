@@ -8,6 +8,7 @@
     <title>ark-vcs</title>
 	<authors>Ark-VCS</authors>
     <projectUrl>https://ark-vcs.com/download.html</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/srowlandsdev/choco_packages/5d2d4caa8b44b0807f16f92381220a4a93610ebd/ark-vcs/ark_logo_256x256.png</iconUrl>
     <licenseUrl>https://ark-vcs.com/pricing.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://ark-vcs.com/index.html</projectSourceUrl>

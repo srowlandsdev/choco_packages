@@ -1,15 +1,15 @@
 $ErrorActionPreference = 'Stop'
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://ark-vcs.com/versions/Ark-Vcs-0_6_2.zip'
-$version = '0.6.2'
+$url        = 'https://ark-vcs.com/versions/Ark-Vcs-0_6_3.zip'
+$version = '0.6.3'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'EXE'
   url           = $url
   softwareName  = 'ark-vcs*'
-  checksum      = '301CBD37F59BC06FD06B098A457E86E39737F68A48F07413517DBED60015B3AC'
+  checksum      = 'E6D24F8E2E303405218DB0346BC90597FAF5A8639A6597ECA9BA244C0EAB01F6'
   checksumType  = 'sha256'
   validExitCodes= @(0)
   silentArgs   = '/s /v"/qn"'

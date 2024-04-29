@@ -1,4 +1,12 @@
 # Package changelog
+## Version: 0.6.3 (19/02/2024)
+### Fixes:
+- Improved performance building the branch merges in changelist history when multiple branches are involved
+- Fixed horizontal scrollbars in log, changes and changelist details panels
+- Changed diff context menu to show the last 10 entries and place older ones under a sub-menu
+
+### Notes:
+- If you open an older project, depending on the size, it may take a while before ark loads and becomes responsive, given that in this release we upgrade the servers in order to compress all files stored
 
 ## Version: 0.6.2 (16/02/2024)
 ### Fixes:

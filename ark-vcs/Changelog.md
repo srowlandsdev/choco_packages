@@ -1,4 +1,60 @@
 # Package changelog
+## Version: 0.7.1 (20/04/2024)
+### Fixes:
+- Fixed branch creation when we wouldn't immediately switch to it
+- Fixed branch graph being broken after new branch was created until ark was relaunched
+- Fixed reconcile not handled correctly when files with the same start had to be reconciled (e.g. deleting folder/file.txt and folder/file.txt_old)
+
+## Version: 0.7.0 (10/04/2024)
+### Features:
+- Communication encryption, via TLS. Servers create their own certificate / private key on launch for convenience, but also supports dropping one there
+- Login refactored so that the server now tells you if you're setting password or not, and if so you're now presented with confirm password field
+- Changed logging to be tied to connection
+- Started changing how logging is handled so that in the future we can more easily get bug reports that hide any important data
+- Reworked how the whole network was setup. Now memory usage is far more under control when pushing huge shelves
+
+### Fixes:
+- Fixed cli clients not saving logs
+
+## Version: 0.6.6 (17/03/2024)
+### Fixes:
+- Changed how listen sockets are setup in order to allow immediate reconnect if crashed
+- Fixed deserializing corrupt network messages (e.g. random ips connecting to server)
+- Fixed current selected workspace not being properly saved / loaded
+- Fixed crash from right click on cl -> download changes when there wasn't already a version of the file locally
+- Fixed adding new project
+- Fixed bug that would cause to never reload .ark_ignore when it didn't have any entries
+- Fixed when OS discards file system events inside a child folder also discarding events from files in upper levels that we'd never know were changed
+- Fixed launching server without -port parameter would use the default 9000 port instead of the port saved in the server config file
+
+### Notes:
+- If you open an older project, depending on the size, it may take a while before ark loads and becomes responsive, given that in this release we upgrade the servers in order to compress all files stored
+
+## Version: 0.6.5 (13/03/2024)
+### Features:
+- New ignore / lock file semantics. Please check documentation for more information (tl;dr: * supported in the middle and ! at the start of entries for exclusion)
+- New Ignore Inspector panel (Views->Ignore Inspector), to help you understand why something is or isn't ignored in your project
+- Refactored how ws_files are created, including caching of relative paths
+
+### Fixes:
+- .ark_ignore file incorrectly reloaded when we couldn't open the file (e.g. text editor had a hold on it). We now will keep retrying until we achieve success
+- Client crash when opening a workspace that is in a changelist that doesn't exist in this project
+- When the server receives Ctrl+C or crashes we try to close the listen socket in order to be able to bind to it straight away
+
+### Notes:
+- If you open an older project, depending on the size, it may take a while before ark loads and becomes responsive, given that in this release we upgrade the servers in order to compress all files stored
+
+## Version: 0.6.4 (26/02/2024)
+### Features:
+- Windows version now has an icon, making it more distinguisable in the taskbar
+
+### Fixes:
+- Bug that would disconnect new users without password with unknown user error
+- Bug adding / editing connection that wouldn't properly set default host / port
+
+### Notes:
+- If you open an older project, depending on the size, it may take a while before ark loads and becomes responsive, given that in this release we upgrade the servers in order to compress all files stored
+
 ## Version: 0.6.3 (19/02/2024)
 ### Fixes:
 - Improved performance building the branch merges in changelist history when multiple branches are involved
@@ -16,7 +72,6 @@
 
 ### Notes:
 - If you open an older project, depending on the size, it may take a while before ark loads and becomes responsive, given that in this release we upgrade the servers in order to compress all files stored
-
 
 ## Version: 0.6.1 (07/02/2024)
 ### Features:

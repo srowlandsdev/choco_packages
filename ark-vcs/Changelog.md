@@ -1,4 +1,22 @@
 # Package changelog
+## Version: 0.7.2 (02/05/2024)
+### Features:
+- Added support for defining default app to launch for file / extension
+- Double-Click now launches default app for that file (if defined)
+- Alt + Double-Click now launches diff app depending on context (i.e. in history it launches with that version and the previous one, with other panels it uses local version with previous)
+- Refactored how history diff menu is handled, now when in the history it will compare the version from that cl and not the local version
+- Added support for shift + click in changes to select ranges within same changelist
+- Ipv6 address input support in format [ip]:port
+- Upgraded jai to 0.1.089
+- Upgraded glfw to 3.4
+- Upgraded imgui to 1.90.5
+- Upgraded OpenGL to be 4.1 to match between Windows and upcoming MacOS version
+
+### Fixes:
+- Server not clearing auth token when it was expired and the user logged in with password
+- Server not loading the license
+- Horizontal scrollbars now always visible to prevent flickering edge case
+
 ## Version: 0.7.1 (20/04/2024)
 ### Fixes:
 - Fixed branch creation when we wouldn't immediately switch to it

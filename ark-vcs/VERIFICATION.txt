@@ -6,10 +6,10 @@ The installer can been downloaded from their official download link listed on <h
 and can be verified like this:
 
 1. Download the following installers:
-  <https://ark-vcs.com/versions/Ark-Vcs-0_7_1.zip>
+  <https://ark-vcs.com/versions/Ark-Vcs-0_7_2.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe' e.g checksum -t sha256 -f path\to\file
 
   checksum type: sha256
-  checksum: C32EEDA81FAD528AA52C545430951D7DAEF40F0FCF3CD5EA3AAB14B582E8CA02
+  checksum: F0864E6055C2F476C2F5378A9AA577687EADE13443E0CFB875D5B29843338D1A

@@ -1,4 +1,12 @@
 # Package changelog
+## Version: 0.8.0 (13/05/2024)
+### Features:
+- MacOS server / cli / gui!
+- Reworked how notifications get sent, they now are sent based on connection id and not user id (this means that if the same user is connected from 2 machines, he's up to date with notifications)
+- Tooltips now have a delay before showing
+- Moved Open App Folder from Debug to File menu
+- Changed font to be 18pt by default, this way if somebody thinks font is too small they can scale it down and look better than scaling smaller font up
+
 ## Version: 0.7.2 (02/05/2024)
 ### Features:
 - Added support for defining default app to launch for file / extension

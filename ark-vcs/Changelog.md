@@ -1,4 +1,19 @@
 # Package changelog
+## Version: 0.9.10 (16/01/2025)
+### Features:
+- Copying files after a get is now time sliced, not making Ark unresponsive when getting big quantities of data
+- Ark now displays the progress of copying files so you can get an idea of how long it will take
+- Improved Diff context menus
+- Refactored states of getting files to be more streamlined
+- Shelf window will now allow you to diff the current revision's assets with any other revisions / history of that asset
+- Diff in changelist history can now diff with local file too (either choosing Local or Alt+Double Click)
+- Diff in changelist history now displays the versions of the asset on that branch, not the versions on the current branch we're at
+- Resolve conflicts window now has a default size on opening
+- Open With preference entries now display Application first and hint that the Name is optional (if it isn't present now displays executable name instead of path)
+- Preferences now allows you to set the framerate for the GUI version (if 'auto' is selected - it is by default -, it will get the framerate from the current primary monitor)
+- Reverting operations that would cause for the deletion of directories will now delete these directories if they have ignored files inside
+- Fixed when having a workspace already populated with the data we're getting not triggering the files to be reconciled after getting latest, which meant they stay showing as being added until they were reconciled
+
 ## Version: 0.8.0 (13/05/2024)
 ### Features:
 - MacOS server / cli / gui!
